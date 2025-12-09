@@ -36,9 +36,9 @@ spec:
             - name: REDIS
               value: redis
             - name: SLOW_START
-              value: '10'
+              value: {{ .Values.backend.SLOW_START | quote }}
             - name: API_ONLY
-              value: '1'
+              value: {{ .Values.backend.API_ONLY | quote }}
           ports:
             - containerPort: 8000
           startupProbe:

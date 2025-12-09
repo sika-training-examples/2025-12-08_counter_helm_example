@@ -21,3 +21,7 @@
 .idea/
 *.tmproj
 .vscode/
+# Project
+*.local.yaml
+*.local.yml
+*.local.sh
